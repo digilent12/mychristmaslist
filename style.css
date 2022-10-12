@@ -49,6 +49,19 @@ p {
 	color: crimson;
 }
 
+.section-name {
+	font-size: 3rem;
+	font-weight: 500;
+	color: black;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+	
+}
+.section-name span {
+	color: crimson;
+}
 
 
 
@@ -249,6 +262,7 @@ p {
 	border-radius: 10px;
 	background-size: cover;
 	
+	
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
@@ -257,7 +271,63 @@ p {
 	content: '';
 	position: absolute;
 	left: 0;
-	top: 20;
+	top: 50;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #000000 0%, #000000 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+
+#services .anime-item {
+	flex-basis: 200%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: row;
+	padding: 20px;
+	border-radius: 10px;
+	background-size: cover;
+	
+	
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+#services .anime-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 70;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #000000 0%, #000000 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+
+#services .jewlery-item {
+	flex-basis: 200%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: row;
+	padding: 20px;
+	border-radius: 10px;
+	background-size: cover;
+	
+	
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+#services .jewlery-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 70;
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(60deg, #000000 0%, #000000 100%);
@@ -273,6 +343,10 @@ p {
 	margin-right: 20px;
 	margin-left: 20px;
 	margin-top: 20px;	
+	cursor: pointer; 
+	-webkit-transition-property: all; 
+	-webkit-transition-duration: 0.3s; 
+    -webkit-transition-timing-function: ease; 
 }
 
 #services .service-bottom .techicon {
@@ -281,8 +355,11 @@ p {
 	width: 250px;
 	margin-bottom: 2px;
 	margin-right: 20px;
-	
-	margin-top: 20px;	
+	margin-top: 20px;
+	cursor: pointer; 
+	-webkit-transition-property: all; 
+	-webkit-transition-duration: 0.3s; 
+	-webkit-transition-timing-function: ease; 
 }
 
 #services .service-bottom .clothesicon {
@@ -293,6 +370,38 @@ p {
 	margin-right: 20px;
 	
 	margin-top: 20px;	
+	cursor: pointer; 
+	-webkit-transition-property: all; 
+	-webkit-transition-duration: 0.3s; 
+	-webkit-transition-timing-function: ease; 	
+}
+
+#services .service-bottom .animeicon {
+	align-items: center;
+	height:300px;
+	width: 250px;
+	margin-bottom: 2px;
+	margin-right: 20px;
+	
+	margin-top: 20px;	
+	cursor: pointer; 
+	-webkit-transition-property: all; 
+	-webkit-transition-duration: 0.3s; 
+	-webkit-transition-timing-function: ease; 	
+}
+
+#services .service-bottom .jewleryicon {
+	align-items: center;
+	height:300px;
+	width: 250px;
+	margin-bottom: 2px;
+	margin-right: 20px;
+	
+	margin-top: 20px;	
+	cursor: pointer; 
+	-webkit-transition-property: all; 
+	-webkit-transition-duration: 0.3s; 
+	-webkit-transition-timing-function: ease; 	
 }
 
 #services .service-item h2 {
@@ -324,6 +433,54 @@ p {
 #services .service-clothes {
 	padding: 20px;
 }
+
+#services .service-anime h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 1px;
+	text-transform: uppercase;
+}
+#services .service-anime {
+	padding: 20px;
+}
+
+#services .service-jewlery h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 1px;
+	text-transform: uppercase;
+}
+#services .service-jewlery {
+	padding: 20px;
+}
+
+.techicon:hover { 
+	transform: scale(1.1); 
+	
+	}
+
+.clothesicon:hover { 
+		transform: scale(1.1); 
+		
+		}
+	
+.icon:hover { 
+			transform: scale(1.1); 
+			
+			}
+
+.animeicon:hover { 
+				transform: scale(1.1); 
+				
+				}
+
+.jewleryicon:hover { 
+					transform: scale(1.1); 
+					
+					}
+			
+		
+
 /* End Services Section */
 
 
@@ -381,91 +538,12 @@ p {
 	/* End Hero */
 
 	/* Services Section */
-	#services .service-bottom .service-item {
-		flex-basis: 45%;
+	#services .service-bottom .service-item .service-clothes .service-tech {
+		flex-basis: 4%;
 		margin: 2.5%;
 	}
 	/* End Services Section */
 
-	/* Project */
-	#projects .project-item {
-		flex-direction: row;
-	}
-	#projects .project-item:nth-child(even) {
-		flex-direction: row-reverse;
-	}
-	#projects .project-item {
-		height: 400px;
-		margin: 0;
-		width: 100%;
-		border-radius: 0;
-	}
-	#projects .all-projects .project-info {
-		height: 100%;
-	}
-	#projects .all-projects .project-img {
-		height: 100%;
-	}
-	/* End Project */
-
-	/* About */
-	#about .about {
-		flex-direction: row;
-	}
-	#about .col-left {
-		width: 600px;
-		height: 400px;
-		padding-left: 60px;
-	}
-	#about .about .col-left .about-img::after {
-		left: -45px;
-		top: 34px;
-		height: 98%;
-		width: 98%;
-		border: 10px solid crimson;
-	}
-	#about .col-right {
-		text-align: left;
-		padding: 30px;
-	}
-	#about .col-right h1 {
-		text-align: left;
-	}
-	/* End About */
-
-	/* contact  */
-	#contact .contact {
-		flex-direction: column;
-		padding: 100px 0;
-		align-items: center;
-		justify-content: center;
-		min-width: 20vh;
-	}
-	#contact .contact-items {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		margin: 0;
-	}
-	#contact .contact-item {
-		width: 30%;
-		margin: 0;
-		flex-direction: row;
-	}
-	#contact .contact-item .icon {
-		height: 100px;
-		width: 100px;
-	}
-	#contact .contact-item .icon img {
-		object-fit: contain;
-	}
-	#contact .contact-item .contact-info {
-		width: 100%;
-		text-align: left;
-		padding-left: 20px;
-	}
-	/* End contact  */
 }
 /* End Media Query For Tablet */
 
